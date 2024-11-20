@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { useCounterStore } from '@/stores/counter'
+
 const { count, inc, dec } = useCount()
+const counter = useCounterStore()
+counter.count++
+// 自动补全！ ✨
+counter.$patch({ count: counter.count + 1 })
+// 或使用 action 代替
+counter.increment()
 </script>
 
 <template>
@@ -13,6 +21,8 @@ const { count, inc, dec } = useCount()
     <view class="btn" @click="inc()">
       <text i-carbon-add />
     </view>
+    <!-- 直接从 store 中访问 state -->
+    <div>Current Count: {{ counter.count }}</div>
   </view>
 </template>
 

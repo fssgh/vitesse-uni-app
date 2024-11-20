@@ -60,8 +60,10 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4020920240930001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4020920240930001",
     "@vueuse/core": "^11.2.0",
+    "nutui-uniapp": "^1.8.1",
+    "pinia": "2.0",
     "vue": "~3.4.38",
-    "vue-i18n": "^9.14.1"
+    "vue-i18n": "^10.0.4"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.14",
@@ -88,6 +90,7 @@
     "eslint": "^9.14.0",
     "lint-staged": "^15.2.10",
     "miniprogram-api-typings": "^4.0.1",
+    "sass": "^1.81.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.5.4",
     "unocss": "^0.64.0",
@@ -99,6 +102,9 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": [
+      "git add *",
+      "eslint --fix"
+    ]
   }
 }

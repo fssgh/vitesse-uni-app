@@ -11,5 +11,9 @@ declare module 'vue' {
     AppLogos: typeof import('./components/AppLogos.vue')['default']
     HiCounter: typeof import('./components/HiCounter.vue')['default']
     InputEntry: typeof import('./components/InputEntry.vue')['default']
+    NutButton: typeof import('nutui-uniapp/components/button/button.vue')['default']
+    NutCell: typeof import('nutui-uniapp/components/cell/cell.vue')['default']
+    NutNotify: typeof import('nutui-uniapp/components/notify/notify.vue')['default']
+    NutToast: typeof import('nutui-uniapp/components/toast/toast.vue')['default']
   }
 }
