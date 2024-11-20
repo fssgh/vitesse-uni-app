@@ -10,7 +10,8 @@
       "@dcloudio/types",
       "@mini-types/alipay",
       "miniprogram-api-typings",
-      "@uni-helper/uni-types"
+      "@uni-helper/uni-types",
+      "nutui-uniapp/global.d.ts"// nutui-uniapp 类型支持
     ],
     "sourceMap": true
   },

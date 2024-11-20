@@ -1,13 +1,13 @@
-import Uni from '@dcloudio/vite-plugin-uni'
 import path from 'node:path'
 import process from 'node:process'
+import Uni from '@dcloudio/vite-plugin-uni'
 import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
 import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
+import { NutResolver } from 'nutui-uniapp'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
-import { NutResolver } from 'nutui-uniapp'
 
 // https://vitejs.dev/config/
 export default async () => {
@@ -43,7 +43,7 @@ export default async () => {
       AutoImport({
         imports: ['vue', '@vueuse/core', 'uni-app', 'pinia', {
           'nutui-uniapp/composables': [
-            // 在这里添加需要自动导入的API
+            // 在这里添加nutui-uniapp需要自动导入的API
             'useToast',
             'useNotify',
           ],
