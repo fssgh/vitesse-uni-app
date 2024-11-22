@@ -19,6 +19,6 @@ module.exports = {
   // 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }
   bracketSpacing: true,
   proseWrap: 'never',
-  htmlWhitespaceSensitivity: 'strict',
+  htmlWhitespaceSensitivity: 'strict', // strict|ignore
   endOfLine: 'auto',
 }

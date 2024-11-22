@@ -40,6 +40,7 @@ declare global {
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
+  const hide: typeof import('./utils/showMsg')['hide']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
   const injectLocal: typeof import('@vueuse/core')['injectLocal']
@@ -122,6 +123,10 @@ declare global {
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
+  const showDanger: typeof import('./utils/showMsg')['showDanger']
+  const showInfo: typeof import('./utils/showMsg')['showInfo']
+  const showSuccess: typeof import('./utils/showMsg')['showSuccess']
+  const showWarning: typeof import('./utils/showMsg')['showWarning']
   const storage: typeof import('./utils/storage')['default']
   const storeToRefs: typeof import('pinia')['storeToRefs']
   const syncRef: typeof import('@vueuse/core')['syncRef']
@@ -258,6 +263,7 @@ declare global {
   const useQuery: typeof import('./composables/useQuery')['useQuery']
   const useRafFn: typeof import('@vueuse/core')['useRafFn']
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
+  const useRequest: typeof import('vue-hooks-plus')['useRequest']
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
   const useScreenOrientation: typeof import('@vueuse/core')['useScreenOrientation']
   const useScreenSafeArea: typeof import('@vueuse/core')['useScreenSafeArea']
@@ -371,6 +377,7 @@ declare module 'vue' {
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
+    readonly hide: UnwrapRef<typeof import('./utils/showMsg')['hide']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly injectLocal: UnwrapRef<typeof import('@vueuse/core')['injectLocal']>
@@ -453,6 +460,10 @@ declare module 'vue' {
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
+    readonly showDanger: UnwrapRef<typeof import('./utils/showMsg')['showDanger']>
+    readonly showInfo: UnwrapRef<typeof import('./utils/showMsg')['showInfo']>
+    readonly showSuccess: UnwrapRef<typeof import('./utils/showMsg')['showSuccess']>
+    readonly showWarning: UnwrapRef<typeof import('./utils/showMsg')['showWarning']>
     readonly storage: UnwrapRef<typeof import('./utils/storage')['default']>
     readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
@@ -589,6 +600,7 @@ declare module 'vue' {
     readonly useQuery: UnwrapRef<typeof import('./composables/useQuery')['useQuery']>
     readonly useRafFn: UnwrapRef<typeof import('@vueuse/core')['useRafFn']>
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>
+    readonly useRequest: UnwrapRef<typeof import('vue-hooks-plus')['useRequest']>
     readonly useResizeObserver: UnwrapRef<typeof import('@vueuse/core')['useResizeObserver']>
     readonly useScreenOrientation: UnwrapRef<typeof import('@vueuse/core')['useScreenOrientation']>
     readonly useScreenSafeArea: UnwrapRef<typeof import('@vueuse/core')['useScreenSafeArea']>

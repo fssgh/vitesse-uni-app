@@ -53,5 +53,6 @@
   "explorer.fileNesting.patterns": {
     "vite.config.*": "pages.config.*, manifest.config.*, uno.config.*, volar.config.*, *.env, .env.*"
   },
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "i18n-ally.localesPaths": []
 }
